@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about"> 
+        <img src="{{ url_for('static', filename='IMG_3843.jpg') }}" alt="Profile Picture" style="width: 150px; height: auto;">
+
+                                      <h2>HI, MY NAME IS DAVID GOLDEN</h2>
+                                        <h2>Junior Software Engineer</h2>
+        <p>I’m David Golden, a junior software developer passionate about coding and eager to grow in the tech industry. While I’m early in my career, I’ve gained hands-on experience through personal projects, coding bootcamps, and self-driven learning. I’m always excited to solve problems, build intuitive applications, and expand my knowledge in software development. I specialize in web technologies like HTML, CSS, JavaScript, python and have started exploring frameworks like React. My enthusiasm for learning keeps me constantly exploring new languages and tools, and I’m particularly interested in full-stack development. I’m excited to contribute to collaborative teams and continuously improve my coding skills through real-world experience.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <a href="project-link.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <a href="project-link.html">View Project</a>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Hi! I’m David Golden, a junior software developer passionate about coding and eager to grow in the tech industry. While I’m early in my career, I’ve gained hands-on experience through personal projects, coding bootcamps, and self-driven learning. I’m always excited to solve problems, build intuitive applications, and expand my knowledge in software development. I specialize in web technologies like HTML, CSS, JavaScript, and have started exploring frameworks like React. My enthusiasm for learning keeps me constantly exploring new languages and tools, and I’m particularly interested in full-stack development. I’m excited to contribute to collaborative teams and continuously improve my coding skills through real-world experience.</p>
+    </section>
+
+    <section id="skills">
+                                        <h2>Skills & Languages</h2>
+        <ul>
+                        <li>HTML</li>      <li>CSS</li>      <li>JavaScript</li>
+                        <li>Python</li>    <li>React</li>    <li>Flask</li>
+                        <li>SQLite</li>    <li>Agile/Scrum</li>  <li>Git & GitHub</li>
+                                            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>c2025 David Golden</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
